@@ -10,12 +10,11 @@ public class ChangePosition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player.transform.position=new Vector3(0,5,0);
+        //Player.transform.position=new Vector3(0,5,0);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void okgo(Transform Pos)
     {
-        
+        Player.transform.position = Pos.position;
     }
 }
